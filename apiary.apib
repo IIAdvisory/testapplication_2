@@ -1,0 +1,45 @@
+FORMAT: 1A
+
+HOST: https://peih0igw90.execute-api.us-east-1.amazonaws.com
+
+# Rebate Description
+
+Display rebate description of each rebate.
+
+<!--# Weather API Root [/]-->
+
+# Group To get rebate description 
+
+## rebate description data [/qa/GetRebateDescriptionforVDP{?RebateId,DealerAccountNo}]
+
+### Get rebate description [GET]
+
+Get the description of each rebate 
+
++ Parameters
+    + RebateId: 115583 (required, number) - Enter rebate ID of which description is needed
+    + DealerAccountNo: 780000 (required, number) - Enter the dealer account no
+
++ Request JSON Message
+
+    + Headers
+    
+            X-Api-Key: sQxGjpaikd2kCsACffpJI8zFZlueBKa78rqoYGvX
+            Accept: application/json
+
++ Response 200 (application/json)
+
+            
+    + Body
+    
+            [
+             {
+              "data": {
+                "statusCode": 200,
+                "body": {
+                "status": 1,
+                "data": "\r\nCHEVROLET IS ANNOUNCING A DOWN PAYMENT ASSISTANCE PROGRAM THAT IS GOOD TOWARDS THE PURCHASE OF ONE OF THE ELIGIBLE NEW AND UNUSED MODELS.\r\n\r\nIMPORTANTÂ PROGRAMÂ NOTES:\r\n-THIS ALLOWANCE MUST BE USED AS DOWN PAYMENT ON A SUPPORTED OR UNSUPPORTED FINANCE CONTRACT THROUGH GM FINANCIAL. \r\nSUPPORTED AND UNSUPPORTED LEASES ARE NOT ELIGIBLE FOR THIS PROGRAM.\r\n\r\nMETHOD OF APPLICATION:\r\nORDER WORKBENCH DELIVER VEHICLE (OWB-DV):\r\nINCENTIVE CODE: KOJ\r\nADDITIONAL REQUIREMENTS: N/A\r\nFINAL DATE FOR SUBMISSION OF APPLICATION AND RESOLUTION OF ALL APPLICABLE REJECTS IS THREE MONTHS FROM THE PROGRAM END DATE.\r\n\r\nMETHOD OF PAYMENT\r\nEFT - OPEN ACCOUNT WITHIN 30 DAYS INCENTIVE CODE: KOJ\r\nMEMO DESCRIPTION: 17-40AJ DPA PROGRAM\r\n"
+                }
+              }
+            }
+            ]
